@@ -15,7 +15,7 @@ jobs:
       run: ./gradlew build
     - name: Build natives
       run: |
-        sudo apt-get install mingw-w64 build-essential gcc-multilib libc6-dev:i386
+        sudo apt-get install mingw-w64 build-essential gcc-multilib libc6-dev
         ./build-natives-eris.sh
     - name: Upload jnlua jar
       uses: actions/upload-artifact@v3
